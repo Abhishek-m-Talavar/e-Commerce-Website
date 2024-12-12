@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <p>Free Shipping on All Orders Over $50 | My Bag (0) | My Account | Wishlist | Currency: USD</p>
+        </div>
+        <nav class="navbar">
+            <h1 class="logo">Cavifa</h1>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Shortcodes</a></li>
+            </ul>
+            <div class="cart-icon">🛒</div>
+        </nav>
+    </header>
+
+    <!-- Shopping Cart Title -->
+    <section class="cart-title">
+        <div class="container">
+            <h1>SHOPPING CART</h1>
+            <p>Shopping Cart > Checkout > Order Complete</p>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Table -->
+    <section class="cart-table">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZW/DY/RA/133215290/mens-wear.jpg" alt="Product Image">
+                            <p>Black Beanie Slate Girl</p>
+                        </td>
+                        <td>$120.00</td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td>$120.00</td>
+                        <td><button class="remove-btn">✖</button></td>
+                    </tr>
+                    <!-- Repeat rows for other products -->
+                </tbody>
+            </table>
+            <div class="cart-buttons">
+                <button class="btn update-btn">Update Cart</button>
+                <button class="btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Actions -->
+    <section class="cart-actions">
+        <div class="container actions-grid">
+            <!-- Coupon Code -->
+            <div class="coupon">
+                <h3>Coupon Code</h3>
+                <input type="text" placeholder="Enter your coupon code">
+                <button class="btn">Apply Coupon</button>
+            </div>
+            <!-- Calculate Shipping -->
+            <div class="shipping">
+                <h3>Calculate Shipping</h3>
+                <select>
+                    <option>United Kingdom (UK)</option>
+                    <option>United States (US)</option>
+                </select>
+                <input type="text" placeholder="State / Province">
+                <input type="text" placeholder="Zip / Postal Code">
+                <button class="btn">Calculate</button>
+            </div>
+            <!-- Cart Totals -->
+            <div class="totals">
+                <h3>Cart Totals</h3>
+                <p>Cart Subtotal: <span>$240.00</span></p>
+                <p>Shipping: <span>$10.00</span></p>
+                <p><strong>Order Total: <span>$250.00</span></strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Contact Us</h4>
+                <p>Cavifa Shop</p>
+                <p>123 Street, New York, USA</p>
+                <p>Email: support@cavifa.com</p>
+                <p>Phone: +1 234-567-890</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
